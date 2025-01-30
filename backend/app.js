@@ -110,5 +110,9 @@ app.delete("/api/user/:id", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+res.send("Hello World")
+})
+
 // Start the server
 app.listen(5000, () => console.log("Server running on http://localhost:5000"));
